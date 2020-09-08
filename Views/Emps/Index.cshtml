@@ -5,6 +5,9 @@
 }
 
 <h2>Index</h2>
+<p>
+    @Html.ActionLink("Employees List", "PView")
+</p>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -35,9 +38,10 @@
             @Html.DisplayFor(modelItem => item.EDOJ)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.EId }) |
-            @Html.ActionLink("Details", "Details", new { id=item.EId }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.EId })
+            @Html.ActionLink("Edit", "Edit", new { id = item.EId }) |
+            @Html.ActionLink("Details", "Details", new { id = item.EId }) |
+            @Html.ActionLink("Delete", "Delete", new { id = item.EId })
+  
         </td>
     </tr>
 }

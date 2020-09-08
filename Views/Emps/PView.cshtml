@@ -1,0 +1,38 @@
+﻿@model IEnumerable<WebApplication1.Models.Emp>
+
+<h1>List of Employees</h1>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Ename)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Edesig)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EDOJ)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.Ename)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Edesig)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EDOJ)
+            </td>
+        </tr>
+    }
+
+</table>
+<p>
+    @Html.ActionLink("Back to Index", "Index")
+</p>
+

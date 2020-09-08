@@ -19,6 +19,10 @@ namespace WebApplication1.Controllers
         {
             return View(db.Emps.ToList());
         }
+        public ActionResult PView()
+        {
+            return View(db.Emps.ToList());
+        }
 
         // GET: Emps/Details/5
         public ActionResult Details(int? id)
